@@ -44,7 +44,7 @@ export default async function RootLayout({
               </button>
             </div>
             <div className="flex items-center gap-8">
-              {layoutData.topBar.links.map((link, index) => (
+              {layoutData.topBar.links.map((link: any, index: any) => (
                 <Link
                   key={index}
                   href={link.href}
@@ -81,7 +81,7 @@ export default async function RootLayout({
 
             <div className="flex items-center justify-between w-full max-w-screen-lg">
               <nav className="hidden md:flex items-center gap-12 text-sm">
-                {layoutData.mainNav.map((item, index) => (
+                {layoutData.mainNav.map((item: any, index: any) => (
                   <Link
                     key={index}
                     href={item.href}

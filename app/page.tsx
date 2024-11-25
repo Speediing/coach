@@ -31,7 +31,7 @@ export default async function Page() {
             {homeData.hero.title}
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            {homeData.hero.buttons.map((button, index) => (
+            {homeData.hero.buttons.map((button: any, index: any) => (
               <Button
                 key={index}
                 variant="secondary"
