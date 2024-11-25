@@ -13,9 +13,7 @@ export const metadata: Metadata = {
 };
 
 async function getLayoutData() {
-  const baseUrl = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "http://localhost:3001";
+  const baseUrl = "https://apis-lime.vercel.app";
 
   const res = await fetch(`${baseUrl}/api/layout`);
   if (!res.ok) throw new Error("Failed to fetch layout data");

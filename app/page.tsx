@@ -3,9 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ProductGrid } from "@/components/product-grid";
 
 async function getHomeData() {
-  const baseUrl = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "http://localhost:3001";
+  const baseUrl = "https://apis-lime.vercel.app";
 
   const res = await fetch(`${baseUrl}/api/home`);
   if (!res.ok) throw new Error("Failed to fetch home data");
